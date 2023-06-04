@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="assets/aos/aos.css">
+    <title>Nyametease Perfect Grace Foundation/home</title>
+</head>
+<body>
+    <section class="bg-full">
+
+    <header class="relative md:bg-footcolor">
+        <nav class="container mx-auto flex justify-between py-4 p-2 md:pl-2 md:pr-2 md:p-0 text-lightpinkneutral">
+            <!-- logo -->
+            <div>
+                <a href="index.html"><img src="images/logo.png" alt="logo" class="w-12"></a>
+            </div>
+             <!-- nav items -->
+            <div class="hidden md:flex">
+                <ul class="flex py-4 space-x-6 font-semibold">
+
+                    <li class=" hover:underline"><a href="index.html">Home</a></li>
+                    <li class=" hover:underline"><a href="about.html">About Us</a></li>
+                    <li class=" hover:underline"><a href="mission.html">Mission</a></li>
+                    <li class=" hover:underline"><a href="gallery.html">Gallery</a></li>
+                    <li class=" hover:underline"><a href="contact.html">Contact</a></li>
+                    <li ><a href="donate.html" class="btn">Donate</a></li>
+                
+                </ul>
+            </div>
+
+            <button id="navbtn" class="md:hidden">
+                <span class="one"></span>
+                <span class="two"></span>
+                <span class="three"></span>
+            </button>
+        </nav>
+
+
+        <!-- nav items for mobile -->
+        <div class=" mobilenav hidden container mx-auto px-6 absolute flex-col min-h-screen min-w-full bg-footcolor" id="menu">
+
+            <div class="flex flex-col justify-center text-lightpinkneutral pt-8 text-center">
+                <ul>
+
+                    <li class="py-2 pt-2 hover:underline"><a href="index.html">Home</a></li>
+                    <li class="py-4 hover:underline"><a href="about.html">About Us</a></li>
+                    <li class="py-4 hover:underline"><a href="mission.html">Mission</a></li>
+                    <li class="py-4 hover:underline"><a href="gallery.html">Gallery</a></li>
+                    <li class="py-4 hover:underline"><a href="contact.html">Contact</a></li>
+                    <li class="btn">
+                    <a href="donate.html">Donate</a></li>
+                </ul>
+            </div>
+
+
+            <div class="flex justify-center flex-wrap items-center text-lightpinkneutral ">
+
+                <div class="flex space-x-12 pt-6">
+                    <a href=""><img src="images/icon-facebook.svg" alt="facebook"></a>
+                    <a href=""><img src="images/icon-instagram.svg" alt=""></a>
+                    <a href=""><img src="images/icon-twitter.svg" alt=""></a>
+                    <a href=""><img src="images/icon-youtube.svg" alt=""></a>
+                </div>
+
+                <div class="flex flex-wrap pt-6">
+                    <h3 class="mr-2">Tel:</h3>
+                    <a href="tel:+233242870568">+233 242870568</a>
+                </div>
+            
+            </div> 
+            
+
+        </div>
+
+    </header>
+
+    <main>
+        
+        <!-- notifications-->
+
+        <div class="popup-container" id="popup-container">
+            <!-- popup content -->
+            <div class="popup">
+                <h2 class="text-blue-500 font-semibold text-2xl">Welcome to Nyametease Perfect Grace Foundation</h2>
+                <p class="pt-4 text-lg">Thanks for visiting, kindly subscribe to our website for newsletter</p>
+                <p class="pt-4 text-lg text-red-500">Note that <span class="font-bold text-red-900">the website is under construction</span> and user experience may be affected. Check back regularly for updates</p>
+
+                <button id="close-button" class="text-white bg-red-600 p-1 rounded-md mt-4">Close</button>
+            </div>
+        </div>
+
+
+        <!-- note 2/ ophan -->
+
+        <div id="notification" class="fixed bottom-0 right-0 bg-gray-900 text-white p-4 rounded-t-lg shadow-lg ">
+            <span class="absolute top-0 right-0 mt-2 mr-2 cursor-pointer" onclick="closeNotification()">&times;</span>
+            <p class="max-w-12 p-2">A child needs an immediate assistance, care to assist, kindly <a href="contact.html" class="text-red-600">get in touch</a> or <a href="tel:+233242870568" class="text-red-600">call</a></p>
+          </div>
+
+
+        <!-- end notification -->
+
+        
+        <!-- hero section -->
+        <section class="hero">
+            <div class="h-screen container mx-auto md:py-14 p-2 pb-14 mb-8 md:mb-0 md:flex justify-center align-center ">
+                <div class="herotext flex flex-col justify-center text-center items-center leading-7 mt-12 pt-6 md:pt-0 md:mt-4 text-white md:px-2">
+                    <div>
+                    <h1 class="text-5xl font-bold md:text-8xl lg:text-9xl"  data-aos="fade-down">NYAMETEASE<br> </h1>
+                    </div>
+
+                    <div>
+                        <h2 class="text-3xl md:text-4xl font-bold md:pt-3 " data-aos="fade-down" data-aos-delay="150">Perfect Grace Foundation</h2>
+                    </div>
+
+                    <div>    
+                    <p class="md:py-6 py-4 text-gray-300 text-lg max-w-lg" data-aos="fade-down" data-aos-delay="200">At Perfect Grace Foundation, we cherish life and the decision to make life better is a decision to recreate a generation of hope</p>
+                    </div>
+ 
+                    <div class="flex">
+                    <a href="#cta" class="btn" data-aos="fade-up" data-aos-delay="250">Read More</a>
+                    </div>
+                </div>
+            </div>            
+        </section>
+    </section>
+        
+
+        <!-- cta home-->
+        <section id="cta" class=" bg-footcolor text-lightpinkneutral">
+            <div class=" container mx-auto p-2">
+                <div class="text-center md:py-12">
+                    <div>
+                        <h2 class="text-4xl font-bold pb-6" data-aos="fade-up">
+                            Everyone Belongs, A Foundation For Us All
+                        </h2>
+                        <p class="text-xl py-4" data-aos="fade-up" data-aos-delay="100">
+                            The life of a child and a family matters, every bit of it is a blessing. To make someone happy is a core priority of life. If you make someone smile, remember you have caused a generation to smile. You shall always be remembered as the one who influenced the change.
+                        </p>
+                    </div>
+                    <div class="py-4">
+                        <a href="donate.html" class="btn" data-aos="fade-up" data-aos-delay="150">Let's do this together</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- flipping cards -->
+        <section>
+            <div class="container mx-auto py-6 p-2 flex flex-col lg:flex-row justify-center items-center md:space-x-4">
+
+                <!-- card 1 -->
+                <div class="relative w-full h-72 shadow-lg flip-card pb-4 mb-8 bg-cardinner" data-aos="fade-up">
+                    <div class="rounded-lg p-4">
+
+                    <div class="front flex flex-col items-center text-white p-4 md:pt-8">
+                        
+                        <div class="text-center leading-10 ">
+                        <p class="text-4xl font-bold">Donate </p>
+                        <p class="text-2xl font-medium md:text-4xl">to our</p>
+                        <p class="text-3xl font-bold md:text-4xl">Course</p>
+                        </div>
+                        
+                        <div class="pt-4 md:pt-8">
+                            <img src="images/money.svg" alt="money svg" class="w-20">
+                        </div>
+                    </div>
+                    <div class="back bg-orange-800 rounded-lg w-full h-full p-3 flex flex-col items-center">
+                        <div class="text-center text-white">
+                        <p class="text-2xl leading-10">Support our course with any amount</p>
+                        </div>
+                        <div class="py-2">
+                            <img src="images/money.svg" alt="money svg" class="w-20">
+                        </div>
+                        <div class="text-center pt-6">
+                        <a href="donate.html" class="btn">Make A Donation</a>
+                        </div>
+                    </div>
+
+                    </div>
+                </div>
+
+                <!-- card 2 -->
+                <div class="relative w-full h-72 shadow-lg flip-card pb-4 mb-8 bg-cardinner" data-aos="fade-up" data-aos-delay="150">
+                    <div class="rounded-lg p-4">
+
+                    <div class="front flex flex-col items-center text-white p-4 md:pt-8">
+                        
+                        <div class="text-center leading-10 ">
+                        <p class="text-4xl font-bold">Contribute</p>
+                        <p class="text-2xl font-medium md:text-4xl">to our</p>
+                        <p class="text-3xl font-bold md:text-4xl">Course</p>
+                        </div>
+                        
+                        <div class="pt-4 md:pt-8">
+                            <img src="images/shakehands.svg" alt="shakehands" class="w-24">
+                        </div>
+                    </div>
+                    <div class="back bg-orange-800 rounded-lg w-full h-full p-3 flex flex-col items-center">
+                        <div class="text-center text-white">
+                        <p class="text-2xl leading-10">Be a heartfelt contributor</p>
+                        </div>
+                        <div class="py-2">
+                            <img src="images/shakehands.svg" alt="shakehands" class="w-24">
+                        </div>
+                        <div class="text-center pt-6">
+                        <a href="contact.html" class="btn">Contribute regularly</a>
+                        </div>
+                    </div>
+
+                    </div>
+                </div>
+
+                <div class="relative w-full h-72 shadow-lg flip-card pb-4 mb-8 bg-cardinner" data-aos="fade-up" data-aos-delay="250">
+                    <div class="rounded-lg p-4">
+
+                    <div class="front flex flex-col items-center text-white p-4 md:pt-8">
+                        
+                        <div class="text-center leading-10 ">
+                        <p class="text-4xl font-bold">Partner with</p>
+                        <p class="text-2xl font-medium md:text-4xl">Nyametease</p>
+                        <p class="text-3xl font-bold md:text-4xl">Perfect Grace</p>
+                        </div>
+                        
+                        <div class="pt-4 md:pt-8">
+                            <img src="images/partner.svg" alt="partner icon" class="w-24">
+                        </div>
+                    </div>
+                    <div class="back bg-orange-800 rounded-lg w-full h-full p-3 flex flex-col items-center">
+                        <div class="text-center text-white">
+                        <p class="text-2xl leading-10">Be A Life time partner of Nyametease Perfect Grace</p>
+                        </div>
+                        <div class="py-2">
+                            <img src="images/partner.svg" alt="partner" class="w-24">
+                        </div>
+                        <div class="text-center pt-6">
+                        <a href="donate.html" class="btn">See How</a>
+                        </div>
+                    </div>
+
+                    </div>
+                </div>
+
+                
+
+            </div>
+
+        </section>  
+
+        <!-- about section -->
+        <section class="max-vh-100 pt-8 mt-0">
+            <div class=" container mx-auto pb-6 p-2 flex flex-col justify-center items-center lg:flex-row lg:space-x-6">
+
+                <div class=" lg:w-1/2 pb-4">
+                    <h2 class="text-3xl font-semibold pb-4 text-center" data-aos="fade-up">NYAMETEASE PERFECT GRACE Foundation</h2>
+                    <p class=" leading-7" data-aos="fade-up" data-aos-delay="100">Nyametease Perfect Grace Foundation is a non-profitable, non-political and a Ghana-based organization started many years ago. The Foundation aims to sponsor and encourage education for all, especially children. In the light of this, it targets children from all ethnic backgrounds and race and gears them towards opportunities.</p>
+                    <br>
+                    <p class="leading-7 pb-6" data-aos="fade-up" data-aos-delay="150"> The foundation is currently focused on feeding and providing school fees to the needy and valnerable families.
+                    </p>
+                    <p class="leading-7 pb-6" data-aos="fade-up" data-aos-delay="150">Nyametease Perfect Grace Foundation seeks to provide the needs of children from broken homes, dropouts and children without the hope of tomorrow to a place to find grace.</p>
+
+                    <a href="about.html" class="btn" data-aos="fade-right" data-aos-delay="200">Learn More</a>
+                </div>
+
+                <div class="about-border pt-8 lg:w-1/2" data-aos="fade-up">
+                    <div class="items-center py-4">
+                        <img src="images/9.jpg" alt="" class="w-full">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- cta -->
+        <section class=" bg-footcolor">
+            <div class="container mx-auto py-6 text-lightpinkneutral p-2">
+                <div class="flex items-center flex-col justify-center text-center">
+
+                    <div class="md:px-8 md:mx-8 flex flex-col items-center justify-center align-center my-8">
+                    <h3 class="text-4xl font-semibold" data-aos="fade-up">Help Save A life and Build One For the Better</h3>
+
+                    <p class="py-2 md:py-3" data-aos="fade-up" data-aos-delay="100">We can do it together, it doesn't take much. Any contribution you make will go long way to sponsor the life of not just a child, but a generation</p>
+                    </div>
+                    <div class="btn" data-aos="fade-up" data-aos-delay="150">
+                        <a href="contact.html">See how you can help</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Activities and events -->
+        <!-- <section>
+            <div class=" container mx-auto py-8 p-2 items-center flex flex-col">
+                <div>
+                    <h2 class="text-3xl py-2 px-4 align-center font-bold md:text-4xl">Activities and Events</h2>
+                </div>
+            <div class="lg:flex">    
+                <div class="flex flex-col p-4 m-4 bg-gray-200 rounded-lg shadow-lg">
+                    
+                    <div class="">
+                        <h3 class="pb-2 text-2xl font-bold"></h3>
+                        <p class="pb-2">A list of counselling sections held for the children</p>
+                    </div>
+                    <div>
+                        <img src="images/op1.jpg" alt="">
+                    </div>
+                    <h2 class="text-xl font-bold text-center">Coming Soon</h2>
+                    <div class="btn">
+                        <a href="#">Learn More</a>
+                    </div>
+                   
+                </div>
+
+                <div class="flex flex-col bg-gray-200 p-4 m-4 rounded-lg shadow-lg">
+                    
+                    <div class="">
+                        <h3 class="pb-2 text-2xl font-bold">Counseliing</h3>
+                        <p class="pb-2">A list of counselling sections held for the children</p>
+                    </div>
+                    <div>
+                        <img src="images/op1.jpg" alt="">
+                    </div>
+                    <h2 class="text-xl font-bold text-center">Coming Soon</h2>
+                    <div class="btn">
+                        <a href="#">Learn More</a>
+                    </div>
+                   
+                </div>
+            </div>    
+            <div class="lg:flex">    
+                <div class="flex flex-col p-4 m-4 bg-gray-200 rounded-lg shadow-lg">
+                    
+                     <div class="">
+                        <h3 class="pb-2 text-2xl font-bold">Counseliing</h3>
+                        <p class="pb-2">A list of counselling sections held for the children</p>
+                    </div>
+                    <div>
+                        <img src="images/op1.jpg" alt="">
+                    </div> 
+                    <h2 class="text-xl font-bold text-center">Coming Soon</h2>
+                    <div class="btn">
+                        <a href="#">Learn More</a>
+                    </div>
+                   
+                </div>
+
+                <div class="flex flex-col bg-gray-200 p-4 m-4 rounded-lg shadow-lg">
+                    
+                    <div class="">
+                        <h3 class="pb-2 text-2xl font-bold">Counseliing</h3>
+                        <p class="pb-2">A list of counselling sections held for the children</p>
+                    </div>
+                    <div>
+                        <img src="images/op1.jpg" alt="">
+                    </div>
+                    <h2 class="text-xl font-bold text-center">Coming Soon</h2>
+                    <div class="btn">
+                        <a href="#">Learn More</a>
+                    </div>
+                   
+                </div>
+            </div>    
+            </div>
+        </section> -->
+
+        <!-- newsletter section -->
+
+        <section class=" bg-softpurpleprimary">
+            <div class="container mx-auto py-6">
+                <div class="p-2 flex flex-col align-center justify-center items-center text-center">
+                    <div class=" pb-4">
+                        <p class=" font-semibold text-2xl md:text-3xl" data-aos="fade-down">Get to know what's happening regularly</p>
+                    </div>
+                    <form action="assets/php/index.php" method="Post">
+                        <input type="text" class="border border-solid border-gray-900 rounded-lg h-8 focus:outline-none my-2 md:w-80 md:h-10 p-2" required data-aos="fade-right" data-aos-delay="100">
+
+                        <button class="btn md:mx-8 cursor-pointer" type="submit" data-aos="fade-up" data-aos-delay="100">Get in touch</button>
+
+                        <!-- redirect to home -->
+                        <!-- <input name="_redirect" type="hidden" id="name" value="https://nyametease.netlify.app/home"> -->
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- footer section -->
+
+    <footer class=" bg-footcolor" data-aos="fade-up">
+        <section class="container mx-auto py-6 items-center p-2">
+            
+            <div class="flex flex-col items-center">
+                <img src="images/logo.png" alt="" class="w-20">
+            </div>
+
+            <!-- footer items container -->
+            <section class="md:flex justify-between md:space-x-12">    
+            <section class=" items-center ">
+                <!-- menu items -->
+                <div>
+                    <h2 class="text-2xl font-semibold text-lightpinkneutral">Menu Items</h2>
+                </div>
+
+                <div class="flex text-lightpinkneutral space-x-16 pt-2 pb-4 justify-between">
+                    <ul>
+
+                        <li class="py-3"><a href="index.html">Home</a></li>
+                        <li class="py-3"><a href="about.html">About Us</a></li>
+
+                    </ul>  
+
+                    <ul>
+                        <li class="py-3"><a href="mission.html">Mission</a></li>
+                        <li class="py-3"><a href="gallery.html">Gallery</a></li>
+                    </ul> 
+
+                    <ul>
+                        
+                        <li class="py-3 pb-3"><a href="contact.html">Contact</a></li>
+                        <li class="py-3"><a href="donate.html">Donate</a></li>
+                        
+                    </ul>
+                </div>
+            </section>
+
+            <!-- newsletter section -->
+
+            <section class=" flex flex-col md:justify-between md:pt-8">
+                <section class="pt-6 lg:pt-2 lg:flex text-black">
+                    <input type="text" class="my-2 h-8 rounded-lg focus:outline-none md:w-72 md:h-10 p-2" required>
+                    <button for="input" type="submit" class="btn md:py-2 md:mx-8">Newsletter</button>
+                </section>
+
+                <!-- social icons -->
+                <section>
+                    <div class="py-2 lg:flex lg:space-x-4 text-lightpinkneutral">
+                        <div class="pb-6">
+                            <h2 class="text-2xl font-semibold">Let's go social:</h2>
+                        </div>
+                        
+                        <div class="flex justify-between flex-wrap ">
+
+                            <div class="flex space-x-12 pb-3 lg:pt-2">
+                                <a href=""><img src="images/icon-facebook.svg" alt="facebook"></a>
+                                <a href=""><img src="images/icon-instagram.svg" alt=""></a>
+                                <a href=""><img src="images/icon-twitter.svg" alt=""></a>
+                                <a href=""><img src="images/icon-youtube.svg" alt=""></a>
+                            </div>
+
+                            <div class="flex flex-wrap md:mx-4 lg:pt-1 lg:mr-3">
+                                <h3 class="mr-2">Tel:</h3>
+                                <a href="tel:+233242870568">+233 242870568</a>
+                            </div>
+                        
+                        </div>    
+                    </div>
+                </section>
+
+            </section>
+        </section>        
+                <section class="flex justify-between py-2 text-lightpinkneutral">
+                    <div>copyright @ 2023</div>
+                    <div>
+                        <a>Terms and Conditions</a>
+                    </div>
+            </section>
+    </section>
+    
+ </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+
+    <script src="assets/aos/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
